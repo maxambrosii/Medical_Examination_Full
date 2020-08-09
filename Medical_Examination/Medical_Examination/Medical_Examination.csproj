@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF721B90-65D1-4BFC-8AED-B2B1AE975F88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Medical_Examination</RootNamespace>
+    <AssemblyName>Medical_Examination</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDiagnosisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDiagnosisForm.Designer.cs">
+      <DependentUpon>AddDiagnosisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDoctorForm.Designer.cs">
+      <DependentUpon>AddDoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMedicineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMedicineForm.Designer.cs">
+      <DependentUpon>AddMedicineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPatientForm.Designer.cs">
+      <DependentUpon>AddPatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddReceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddReceptionForm.Designer.cs">
+      <DependentUpon>AddReceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRecipeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRecipeForm.Designer.cs">
+      <DependentUpon>AddRecipeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorizationForm.Designer.cs">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteDoctorForm.Designer.cs">
+      <DependentUpon>DeleteDoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePatientForm.Designer.cs">
+      <DependentUpon>DeletePatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DispanserizatsiaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DispanserizatsiaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DispanserizatsiaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DispanserizatsiaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DispanserizatsiaDataSetRECIPEREPORT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DispanserizatsiaDataSetRECIPEREPORT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DispanserizatsiaDataSetREPORT_DIAGNOZ.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DispanserizatsiaDataSetREPORT_DIAGNOZ.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm.Designer.cs">
+      <DependentUpon>GeneralForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loader2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loader2.Designer.cs">
+      <DependentUpon>Loader2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoaderForm.Designer.cs">
+      <DependentUpon>LoaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanGetCountPacientByAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanGetCountPacientByAreaForm.Designer.cs">
+      <DependentUpon>ScanGetCountPacientByAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanGetCountPacientByCertainAgeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanGetCountPacientByCertainAgeForm.Designer.cs">
+      <DependentUpon>ScanGetCountPacientByCertainAgeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanGetCountPatientFromEveryDoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanGetCountPatientFromEveryDoctorForm.Designer.cs">
+      <DependentUpon>ScanGetCountPatientFromEveryDoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanGetDoctorAndCountOfPatientWithUserDiagnosisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanGetDoctorAndCountOfPatientWithUserDiagnosisForm.Designer.cs">
+      <DependentUpon>ScanGetDoctorAndCountOfPatientWithUserDiagnosisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanGetPatientByDiagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanGetPatientByDiagnosis.Designer.cs">
+      <DependentUpon>ScanGetPatientByDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanGetPatientByRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanGetPatientByRecipe.Designer.cs">
+      <DependentUpon>ScanGetPatientByRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="SupportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupportForm.Designer.cs">
+      <DependentUpon>SupportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDoctorForm.Designer.cs">
+      <DependentUpon>UpdateDoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePatientForm.Designer.cs">
+      <DependentUpon>UpdatePatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateReceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateReceptionForm.Designer.cs">
+      <DependentUpon>UpdateReceptionForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddDiagnosisForm.resx">
+      <DependentUpon>AddDiagnosisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDoctorForm.resx">
+      <DependentUpon>AddDoctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMedicineForm.resx">
+      <DependentUpon>AddMedicineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPatientForm.resx">
+      <DependentUpon>AddPatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddReceptionForm.resx">
+      <DependentUpon>AddReceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRecipeForm.resx">
+      <DependentUpon>AddRecipeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorizationForm.resx">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteDoctorForm.resx">
+      <DependentUpon>DeleteDoctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePatientForm.resx">
+      <DependentUpon>DeletePatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm.resx">
+      <DependentUpon>GeneralForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loader2.resx">
+      <DependentUpon>Loader2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoaderForm.resx">
+      <DependentUpon>LoaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="ScanGetCountPacientByAreaForm.resx">
+      <DependentUpon>ScanGetCountPacientByAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanGetCountPacientByCertainAgeForm.resx">
+      <DependentUpon>ScanGetCountPacientByCertainAgeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanGetCountPatientFromEveryDoctorForm.resx">
+      <DependentUpon>ScanGetCountPatientFromEveryDoctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanGetDoctorAndCountOfPatientWithUserDiagnosisForm.resx">
+      <DependentUpon>ScanGetDoctorAndCountOfPatientWithUserDiagnosisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanGetPatientByDiagnosis.resx">
+      <DependentUpon>ScanGetPatientByDiagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanGetPatientByRecipe.resx">
+      <DependentUpon>ScanGetPatientByRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupportForm.resx">
+      <DependentUpon>SupportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDoctorForm.resx">
+      <DependentUpon>UpdateDoctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePatientForm.resx">
+      <DependentUpon>UpdatePatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateReceptionForm.resx">
+      <DependentUpon>UpdateReceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DispanserizatsiaDataSet.xsc">
+      <DependentUpon>DispanserizatsiaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DispanserizatsiaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispanserizatsiaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DispanserizatsiaDataSet.xss">
+      <DependentUpon>DispanserizatsiaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DispanserizatsiaDataSet1.xsc">
+      <DependentUpon>DispanserizatsiaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DispanserizatsiaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispanserizatsiaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DispanserizatsiaDataSet1.xss">
+      <DependentUpon>DispanserizatsiaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DispanserizatsiaDataSetRECIPEREPORT.xsc">
+      <DependentUpon>DispanserizatsiaDataSetRECIPEREPORT.xsd</DependentUpon>
+    </None>
+    <None Include="DispanserizatsiaDataSetRECIPEREPORT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispanserizatsiaDataSetRECIPEREPORT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DispanserizatsiaDataSetRECIPEREPORT.xss">
+      <DependentUpon>DispanserizatsiaDataSetRECIPEREPORT.xsd</DependentUpon>
+    </None>
+    <None Include="DispanserizatsiaDataSetREPORT_DIAGNOZ.xsc">
+      <DependentUpon>DispanserizatsiaDataSetREPORT_DIAGNOZ.xsd</DependentUpon>
+    </None>
+    <None Include="DispanserizatsiaDataSetREPORT_DIAGNOZ.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispanserizatsiaDataSetREPORT_DIAGNOZ.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DispanserizatsiaDataSetREPORT_DIAGNOZ.xss">
+      <DependentUpon>DispanserizatsiaDataSetREPORT_DIAGNOZ.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background with Border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background with Border1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dispanserizatsia.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dispanserizatsia_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Dispanserizatsia.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\w512h5121377940393185102receiptshoppingstreamline %281%29.png" />
+    <None Include="Resources\Screenshot_7.png" />
+    <None Include="Resources\Screenshot_6.png" />
+    <None Include="Resources\Screenshot_61.png" />
+    <None Include="Resources\Screenshot_5.png" />
+    <None Include="Resources\Screenshot_8.png" />
+    <None Include="Resources\Reports.png" />
+    <None Include="Resources\switch-29786_640.png" />
+    <None Include="Resources\Screenshot_10.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Screenshot_4.png" />
+    <None Include="Resources\Screenshot_31.png" />
+    <None Include="Resources\Screenshot_21.png" />
+    <None Include="Resources\menu-icon-511.png" />
+    <None Include="Resources\Svernuti.png" />
+    <None Include="Resources\minus.png" />
+    <None Include="Resources\Razvernuti.png" />
+    <None Include="Resources\eefefesfsefsef.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\Иконка_закрытия_в_круге_%28ei%29.svg.png" />
+    <None Include="Resources\Служба.png" />
+    <None Include="Resources\w256h2561387214968Help.png" />
+    <None Include="Resources\Backup-PNG-Photo.png" />
+    <None Include="Resources\23-512.png" />
+    <None Include="Resources\256-256-64273d52c282e3b26d2d0968d08b9d8d.png" />
+    <None Include="Resources\zemlya.png" />
+    <None Include="Resources\возраст-png-2.png" />
+    <None Include="Resources\rotateMenu.png" />
+    <None Include="Resources\Прием.png" />
+    <None Include="Resources\DIAGNOZICON.png" />
+    <None Include="Resources\tablets-309927_960_720.png" />
+    <None Include="Resources\Apps-preferences-desktop-user-icon.png" />
+    <None Include="Resources\M.png" />
+    <None Include="Resources\262540.png" />
+    <None Include="Resources\w256h2561339195771Help256x256.png" />
+    <None Include="Resources\w512h5121380376547MetroUIConfigure1.png" />
+    <None Include="Resources\w512h5121380376547MetroUIConfigure.png" />
+    <None Include="Resources\multi-edit.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\menu-icon-51.png" />
+    <None Include="Resources\menu-icon-5.png" />
+    <None Include="Resources\View-refresh_Gion_simple.svg.png" />
+    <None Include="Resources\w512h5121380984637delete1.png" />
+    <None Include="Resources\Screenshot_3.png" />
+    <None Include="Resources\GorLinia.png" />
+    <None Include="Resources\590d8e244815b15bdcf33dc7.png" />
+    <None Include="Resources\ЛИНИЯ.png" />
+    <None Include="Resources\Screenshot_2.png" />
+    <None Include="Resources\Screenshot_1.png" />
+    <None Include="Resources\no-translate-detected_1270-84.jpg" />
+    <None Include="Resources\123.png" />
+    <None Include="Resources\fuzzy-1800136_19203.jpg" />
+    <None Include="Resources\add-1-icon.png" />
+    <None Include="Resources\fuzzy-1800136_19202.jpg" />
+    <None Include="Resources\fuzzy-1800136_19201.jpg" />
+    <None Include="Resources\fuzzy-1800136_1920.jpg" />
+    <None Include="Resources\Untitled-13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

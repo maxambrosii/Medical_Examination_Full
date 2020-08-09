@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="bunifuTransition3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>206, 17</value>
+  </metadata>
+  <data name="animation1.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation1.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation1.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation1.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation1.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACAPwAAAAAL
+</value>
+  </data>
+  <metadata name="bunifuTransition4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>378, 17</value>
+  </metadata>
+  <data name="animation2.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation2.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation2.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation2.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACAPwAAgD8L
+</value>
+  </data>
+  <data name="animation2.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACAPwAAAAAL
+</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>     Для того чтобы добавить нужную информацию перейдите в главное меню, 
+затем выберите пункт Редактирование после этого выбираем пункт Добавить
+и жмем на нужный пункт добавления если вам нужно добавить врача, 
+жмем на пункт Информацию о враче, если пациента,  то на пункт 
+Информацию о пациенте и так далее... 
+
+     При выборе одного из пунктов, вы переходите на форму добавления 
+информации, будьте внимательны! Заполните все что вам нужно без ошибок!
+Кнопка ДОБАВИТЬ станет доступна, жмем на неё и если вся информация 
+внесена без ошибок, то вас оповестит зеленая надпись, информация успешно
+добавлена, если же вы где-либо Допустили ошибку, то вверху вам укажет на 
+вашу ошибку Красная надпись, если такое случилось, просто исправьте неверно
+введенные данные и повторно запускаем программу, вот и всё.
+
+
+</value>
+  </data>
+  <metadata name="bunifuDragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>46</value>
+  </metadata>
+  <data name="label52.Text" xml:space="preserve">
+    <value>     Для того чтобы сделать отчет в один клик, выполняем следующие действия: перейдем
+в Главное Меню, здесь видим вкладку Отчеты. кликаем и у нас отрывается окно по 
+выбору отчетов. в данном случае у нас есть 3 вида отчетов, это Диаграмма по 
+возрастным категориям, Рецепт и назначение, выбираем нужный нам отчет.
+    При выборе Рецепт или Назначение, у вас откроется вкладка для выбора пациента
+Из открывающенгося списка выбираем нужного нам пациента, для Рецепта сразу же
+будет выведен список лекарств, их дозировка и тип, это и будет ваш рецепт. при выборе 
+вкладки Назначение вы можете выбрать Пациента, для которого вы хотите выписать
+Диагноз, а также вы можете выбрать Дату за которую вы хотите распечатать отчет.
+После вывода информации на экран вы можете сразу же отправить их на печать,
+нажав на иконку принтера сверху таблицы с информацией, а также вы сможете
+экспортировать ваш отчет в Word или Excel, в той же верхней панели. Вот и все.</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>Пожалуйста, опишите вашу проблему как можно точнее, чтобы администраторы 
+смогли как можно быстрее вам помочь!
+Если ответ не пришёл вам на email в течении 24 часов, попробуйте снова отправить
+сообщение об ошибке и проверить правильность 
+введённого email адреса для обратной связи.
+</value>
+  </data>
+  <data name="label44.Text" xml:space="preserve">
+    <value>     Для того чтобы оставить сообщение об ошибке, в главном меню, выбираем вкладку 
+помощь,сообщить об ошибке.  В открывшемся окне, вводим свой E-mail, для обратной 
+связи, затем описываем свою проблему. После описания вашей проблемы, Жмём кнопку 
+отправить, после этого мы постараемся как можно быстрее решить вашу проблему, об 
+решении мы оповестим вас по указанному вами email. </value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>      Для того чтобы вернуть вашу базу данных в сохранённое вами положение, В главном 
+меню, выбираем вкладку Настройки, затем пункт Сделать BackUp, открывается окно 
+выбора точки Резервного копирования, выбираем нужную точку восстановления,
+ждём загрузки информации. </value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>    Для того чтобы создать точку резервного копирования, в главном меню выбираем 
+пункт, Настройки -&gt; создать BackUp. Затем выбираем место где нужно сохранить точку
+восстановления. После выбранного места сохранения Резервного Копирования, жмём 
+ОК, после этого ждём загрузки, после успешного создания точки резервного 
+копирования, автоматически закроется формочка, и всплывающее окно оповестит 
+вас об  успешном создании точки BackUp.
+</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>    Для того чтобы просмотреть нужную вам информацию, в главном 
+меню выбираем пункт Просмотр, затем выбираем то что вам нужно 
+просмотреть, откроется форма Просмотра информации, из 
+открывающегося списка выбираем нужные данные, вся информация 
+выведется в таблицу на форме, посмотрев все что вам нужно, 
+закрываем вкладку и продолжаем работу с приложением.
+</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Мы не несём ответственности за утерянные данные, при неправильной эксплуатации 
+приложения. Для того чтобы защитить ваши данные, сделайте 
+BackUp (Резервное копирование) данных, для этого в главном меню, выбираем 
+вкладку Настройки-&gt; Создать BackUp, Немного подождите, пока идёт загрузка,
+после этого можно удалять информацию. После удаления, информация будет
+удалена, о чем оповестит вас зелёная надпись на форме удаления:
+Информация успешно удалена.
+
+Будьте очень внимательны при удалении информации.
+</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>     Для того чтобы удалить информацию о Враче или Пациенте,  перейдите  в главное 
+меню, затем выберите вкладку удалить. В открывшемся блоке, выбираем нужный пункт, 
+Удалить информацию о Враче/Пациент. После того как вы выберите пункт
+Удалить-&gt; Информацию о Пациенте/Докторе, откроется соответствующее 
+окно удаления информации затем выбираем нужного пациента/врача, 
+вся информация о нем, для проверки, будет выведена в окне справа, проверьте её 
+нажмите кнопку удалить, подтвердите удаление. 
+
+</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>При выборе пациента, проверьте правильного ли пациента вы выбрали
+для удобной проверки, в правой части формы откроется вся информация
+о выбранном пациенте.
+Если кнопка заблокирована, то проверьте, выбрали ли вы изменяемый пункт, или нет. 
+</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>    Для того чтобы изменить информацию, нужно следовать инструкциям: 
+Перейдите в главное меню и выберите пункт Редактирование, затем в открывшемся 
+блоке выбираем Изменить. Для того чтобы изменить информацию о враче, 
+выбираем пункт информацию о враче, для изменения информации о пациенте,
+ выбираем изменить информацию о пациенте. При выборе нужного пункта 
+откроется соответствующее окно, для того чтобы изменить информацию, 
+выбираем нужного Пациента/Врача/Приём 
+    После проверки правильности выборки, выберите из присутствующих пунктов,
+те которые хотите изменить, введите нужную информацию, 
+проверьте её и нажмите на кнопку Изменить. При правильных действиях 
+информация изменится, о чем вас оповестит зелёная надпись
+Информация успешно изменена.
+
+
+</value>
+  </data>
+</root>
