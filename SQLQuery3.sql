@@ -1,0 +1,1 @@
+﻿Select Data_Priema From REPORT_DIAGNOZ WHERE FIO_Pacient = 'Ambrosii Max'
